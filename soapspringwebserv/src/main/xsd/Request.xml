@@ -1,0 +1,10 @@
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+	<Body>
+		<GetCourseDetailsRequest xmlns="http://www.com.ibm/courses" 
+		xsi:schemaLocation="http://www.com.ibm/courses course-details.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		
+			<id>1</id>
+		</GetCourseDetailsRequest>
+	</Body>
+</Envelope>

@@ -1,0 +1,31 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.com.ibm/courses" 
+xmlns:tns="http://www.com.ibm/courses" elementFormDefault="qualified">
+	<xsd:element name="GetCourseDetailsRequest">
+	<xsd:complexType>
+	<xsd:sequence>
+	<xsd:element name="id" type="xsd:integer"/>
+	</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="GetCourseDetailsResponse">
+	<xsd:complexType>
+	<xsd:sequence>
+	<xsd:element name="CourseDetails" type="tns:CourseDetails"></xsd:element>
+	</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="CourseDetails">
+	<xsd:sequence>
+	<xsd:element name="id" type="xsd:integer"/>
+	<xsd:element name="name" type="xsd:string"/>
+	<xsd:element name="description" type="xsd:string"/>
+	
+	</xsd:sequence>
+	</xsd:complexType>
+	
+	 
+			
+	
+</xsd:schema>
